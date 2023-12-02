@@ -1,11 +1,14 @@
 (*
 Plan:
         Iterate over each string in the list of calibration values
-        I want to only iterate over as many elements as possible, preferrably O/2 complexity
+        I want to iterate over as few elements as possible, preferrably O/2 complexity
         I could loop from 0 -> length_of_string / 2
-        So for each loop:
-                Grab the first and last character
-                If either character is a number, return a tuple containing it e.g. (str.[i], (get_calibration str))
+        Plan:
+            Turn the string into a list of numeric characters
+            Grab the first character
+            iterate to the last character
+            ???
+            profit
  *)
 
 let explode str = List.init(String.length str) (String.get str);;
